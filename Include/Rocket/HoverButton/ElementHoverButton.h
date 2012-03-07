@@ -30,9 +30,9 @@ public:
 	/// @param[in] value The new time for the hover button.
 	void SetClickTime(const float value);
 
-    /// Returns float value.
-    /// @return The time since the cursor is over the element.
-    float GetHoverTime() const;
+	/// Returns float value.
+	/// @return The time since the cursor is over the element.
+	float GetHoverTime() const;
 
 	/// Called for every event sent to this element or one of its descendants.
 	/// @param[in] event The event to process.
@@ -50,7 +50,6 @@ protected:
 	virtual void OnPropertyChange(const Core::PropertyNameList& changed_properties);
 
 private:
-
 	// The time since the cursor hover the element.
 	float hover_time;
 

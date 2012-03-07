@@ -54,19 +54,19 @@ void ElementHoverButton::ProcessEvent(Rocket::Core::Event& event)
 // Called during the update loop after children are rendered.
 void ElementHoverButton::OnUpdate()
 {
-	if (cursor_over)
+	if(cursor_over)
 	{
-		hover_time+=Core::GetSystemInterface()->GetElapsedTime();
+		hover_time += Core::GetSystemInterface()->GetElapsedTime();
 	}
 	else
 	{
-		hover_time=0.0f;
+		hover_time = 0.0f;
 	}
 
-	if (hover_time >= click_time)
+	if(hover_time >= click_time)
 	{
 		Click();
-		hover_time=0.0f;
+		hover_time = 0.0f;
 	}
 }
 
